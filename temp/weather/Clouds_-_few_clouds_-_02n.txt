@@ -1,0 +1,1 @@
+{"dt":1646114400,"main":{"temp":-0.29,"feels_like":-3.99,"temp_min":-0.29,"temp_max":-0.29,"pressure":1029,"sea_level":1029,"grnd_level":1012,"humidity":65,"temp_kf":0},"weather":[{"main":"Clouds","description":"few clouds","icon":"02n"}],"clouds":{"all":24},"wind":{"speed":3.16,"deg":136,"gust":6.8},"visibility":10000,"pop":0,"sys":{"pod":"n"},"dt_txt":"2022-03-01 06:00:00"}

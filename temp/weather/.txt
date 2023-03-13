@@ -1,0 +1,1 @@
+{"api-key":"64a0e01a5c1d64d534b5ec5a10471a89","city-id":"2949188","recent":{"api-call":"https:\/\/api.openweathermap.org\/data\/2.5\/weather?id=2949188&appid=64a0e01a5c1d64d534b5ec5a10471a89&units=metric","json":false,"data":null}}

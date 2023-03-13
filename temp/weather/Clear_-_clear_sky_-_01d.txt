@@ -1,0 +1,1 @@
+{"dt":1646719200,"main":{"temp":-0.68,"feels_like":-3.08,"temp_min":-0.68,"temp_max":-0.68,"pressure":1025,"sea_level":1025,"grnd_level":1008,"humidity":77,"temp_kf":0},"weather":[{"main":"Clear","description":"clear sky","icon":"01d"}],"clouds":{"all":1},"wind":{"speed":1.87,"deg":105,"gust":2.3},"visibility":10000,"pop":0,"sys":{"pod":"d"},"dt_txt":"2022-03-08 06:00:00"}

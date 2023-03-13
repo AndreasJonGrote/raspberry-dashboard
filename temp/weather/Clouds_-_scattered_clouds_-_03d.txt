@@ -1,0 +1,1 @@
+{"dt":1647064800,"main":{"temp":1.82,"feels_like":-3.35,"temp_min":1.82,"temp_max":1.82,"pressure":1021,"sea_level":1021,"grnd_level":1004,"humidity":45,"temp_kf":0},"weather":[{"main":"Clouds","description":"scattered clouds","icon":"03d"}],"clouds":{"all":50},"wind":{"speed":6.46,"deg":137,"gust":14.3},"visibility":10000,"pop":0,"sys":{"pod":"d"},"dt_txt":"2022-03-12 06:00:00"}
