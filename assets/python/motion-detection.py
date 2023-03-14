@@ -6,7 +6,7 @@ import subprocess
 PIR_PIN = 36
 
 # Timeout in Sekunden
-TIME_OUT = 600
+TIME_OUT = 60
 
 # Status des Displays (0 = aus, 1 = an)
 DISPLAY_STATUS = 1

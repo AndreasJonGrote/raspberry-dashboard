@@ -1,16 +1,16 @@
 // Variables
-var idleTimer;
+var idleTimer ;
 var selectedId ;
 
 function setIdleTimer() {
-    // idleTimer = window.setTimeout( 
-    // function() {
-    //     document.querySelector('body').classList.remove('active');
-    //     document.querySelector('.stage .current-stage-item').classList.remove('current-stage-item') ;
-    //     document.querySelector('.navigation .current-stage-item').classList.remove('current-stage-item') ;
-    //     document.querySelector('.stage .calendar').classList.add('current-stage-item') ;
-    //     document.querySelector('.navigation .calendar').classList.add('current-stage-item') ;
-    // }, 15000);
+    idleTimer = window.setTimeout( 
+    function() {
+        document.querySelector('body').classList.remove('active');
+        document.querySelector('.stage .current-stage-item').classList.remove('current-stage-item') ;
+        document.querySelector('.navigation .current-stage-item').classList.remove('current-stage-item') ;
+        document.querySelector('.stage .calendar').classList.add('current-stage-item') ;
+        document.querySelector('.navigation .calendar').classList.add('current-stage-item') ;
+    }, 15000);
 }
 
 document.body.onclick = function() {
@@ -245,7 +245,7 @@ setTimerButtons.forEach(button => {
     const time = button.parentNode.dataset.value;
     startTimer(time);
     timerWrapper.classList.add('active');
-    givenTimer.textContent = 'Timer: ' + formatTime(time) + ' Min.' ; // gegebenen Timer setzen
+    givenTimer.textContent = 'Timer: ' + formatTime(time) ; // gegebenen Timer setzen
     if (button.parentNode.classList.contains('custom')) {
         fetch('ajax.php?action=save-timer&value=' + time);
     }

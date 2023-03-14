@@ -65,8 +65,14 @@
                 <div class="widgets">
 
                     <div class="server sync-server">
-                        <img src="assets/icons/server-white.svg" alt="" class="backupserver" />
-                        <img src="assets/icons/server-white.svg" alt="" class="fileserver" />
+                        <span>
+                            <img src="assets/icons/server-white.svg" alt="" class="backupserver" />
+                            <em>B</em>
+                        </span>
+                        <span>
+                            <img src="assets/icons/server-white.svg" alt="" class="fileserver" />
+                            <em>D</em>
+                        </span>
                     </div>
 
                     <div class="hue sync-hue">

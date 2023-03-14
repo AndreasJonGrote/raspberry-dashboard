@@ -127,29 +127,29 @@ body {
         display: none;
         width: 30%;
         float: left;
-        padding: 0 30px 0 0;
+        padding: 15px 30px 0 0;
 
 
         a {
-            padding: 30px 15px 15px 15px;
+            padding: 16px 15px 15px 15px;
             background: $hightlightgreen;
             display: inline-block;
             text-decoration: none;
             border-radius: 5px;
             white-space: nowrap;
+            text-align: center;
+            width: 250px;
             
             .given-timer {
-                font-size: 35px;
+                font-size: 25px;
                 line-height: 35px;
                 color: #fff ;
                 opacity: 0.5;
-                text-align: left;
             }
 
             .countdown-timer {
                 font-size: 90px;
                 line-height: 90px;
-                text-align: left;
             }
 
         }
@@ -399,11 +399,11 @@ body {
                 text-align: center;
                 background: $alternative;
                 span {
-                    display: block ;
+                    display: block ; 
                     
-                    &.day {
-                        font-size: 25px;
-                        line-height: 25px;
+                    &.day { 
+                        font-size: 22px;
+                        line-height: 22px;
                     }
 
                     &.temp {
@@ -426,7 +426,7 @@ body {
 
     .timer {
         display: none ;
-        padding: 25px 30px 30px 30px ;
+        padding: 81px 30px 30px 30px ;
 
         > .wrapper {
             display: flex;
@@ -512,8 +512,8 @@ body {
 
 
                 span {                   
-                    font-size: 50px ;
-                    line-height: 50px;
+                    font-size: 45px ;
+                    line-height: 45px;
                     display: inline-block;
                 }
             }
@@ -524,7 +524,7 @@ body {
 
     .hue-control {
 
-        padding: 0 30px 30px 30px;
+        padding: 27px 30px 30px 30px;
 
         a {
             background: $darkgrey;
@@ -532,8 +532,8 @@ body {
             float: left;
             padding: 15px;
             border-radius: 5px;
-            margin: 0 15px 15px 0 ;
-            width: 142px ;
+            margin: 0 10px 10px 0 ;
+            width: 150px ;
             height: 85px;
             hyphens: auto;
 
@@ -588,6 +588,28 @@ body {
             display: inline-block;
             margin-bottom: -3px;
         }
+
+        &.server span {
+            position: relative;
+    
+            em {
+                position: absolute;
+                bottom: -1px;
+                right: -1px;
+                height: 13px;
+                width: 13px;
+                background: #fff;
+                border-radius: 50%;
+                
+                color: #000;
+                font-size: 10px;
+                line-height: 13px;
+                font-weight: 600;
+                font-style: normal;
+                text-align: center;
+            }
+        }
+
     }
     div.sunset {
         img {

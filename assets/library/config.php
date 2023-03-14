@@ -146,32 +146,31 @@
          */
          if (isset($_GET['get']) && $_GET['get'] == 'server') {
             
-
-            $server = array(
-                'ip' => array(
-                    'backup' => '192.168.178.4',
-                    'daten' => '192.168.178.5'
-                )
-            ) ;
-
             $server['output'] = '' ;
-
-            $ping = exec('ping -c 1 '.$server['ip']['backup'], $output, $status) ;
-
+            
+            /** BackUp-Server */
+            $ping = exec('ping -c 1 192.168.178.4', $output, $status) ;
+            
+            $server['output'] .= '<span>' ;
             if ($status == 0) {
                 $server['output'] .= '<img src="assets/icons/server-green.svg" alt="" class="backupserver">' ;
             } else {
                 $server['output'] .= '<img src="assets/icons/server-white.svg" alt="" class="backupserver">' ;
             }
+            $server['output'] .= '<em>B</em></span>' ;
+            
+            /** Daten-Server */
+            $ping = exec('ping -c 1 192.168.178.5', $output, $status) ;
 
-            $ping = exec('ping -c 1 '.$server['ip']['daten'], $output, $status) ;
-
+            $server['output'] .= '<span>' ;
             if ($status == 0) {
                 $server['output'] .= '<img src="assets/icons/server-green.svg" alt="" class="fileserver">' ;
             } else {
                 $server['output'] .= '<img src="assets/icons/server-white.svg" alt="" class="fileserver">' ;
             }
+            $server['output'] .= '<em>D</em></span>' ;
 
+            /** Sync */
             if (isset($_GET['get']) && $_GET['get'] == 'server') {
                 echo $server['output'] ;
             }
